@@ -13,6 +13,10 @@ const TodoSlice= createSlice({
         },
         deleteTodo:(state,action)=>{
             state.todo = state.todo.filter((_, index) => index !== action.payload)
+        },
+        edittodo:(state,action)=>{
+            const {index,newtask}=action.payload
+            state.todo[index].task=newtask
         }
     }
 
@@ -20,4 +24,4 @@ const TodoSlice= createSlice({
 })
 
 export default TodoSlice.reducer
-export const{addtodo,deleteTodo}=TodoSlice.actions
+export const{addtodo,deleteTodo,edittodo}=TodoSlice.actions
