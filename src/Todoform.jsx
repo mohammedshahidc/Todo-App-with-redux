@@ -13,8 +13,8 @@ const Todoform = () => {
     }
 
     return (
-        <div className="container text-center justify-content-center">
-            <div className="w-75 h-auto bg-dark text-center justify-content-center mt-5 mx-auto p-4">
+        <div className="container text-center d-flex justify-content-center">
+            <div className="w-75 w-sm-100 h-auto bg-dark text-center mt-5 p-4 mx-auto">
                 <h1 className="text-warning">TODO APP</h1>
                 <div className="d-flex justify-content-center align-items-center mt-4 flex-wrap">
                     <input
